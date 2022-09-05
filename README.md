@@ -1,5 +1,5 @@
 # Website
-[![build](https://github.com/code-tanks/website/actions/workflows/build.yml/badge.svg)](https://github.com/code-tanks/website/actions/workflows/build.yml)
+[![website](https://github.com/code-tanks/website/actions/workflows/website.yml/badge.svg)](https://github.com/code-tanks/website/actions/workflows/website.yml)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
