@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcode_tanks=self.webpackChunkcode_tanks||[]).push([[763],{842:e=>{e.exports=JSON.parse('{"permalink":"/home/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
