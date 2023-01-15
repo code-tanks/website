@@ -45,7 +45,7 @@ def create_tank():
     return MyTank()
 ```
 
-This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Commands](https://github.com/code-tanks/code-tanks/wiki/Commands) and [Events](https://github.com/code-tanks/code-tanks/wiki/Events).
+This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Anatomy](anatomy.md), [Physics](physics.md), [Commands](commands.md) and [Events](events.md).
 
 # Building
 
