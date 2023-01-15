@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Client Installation
+# For Players
 
 | Templates |
 | --- |

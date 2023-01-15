@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Server Installation
+# Running your own server
 ## Requirements
 - [Docker](https://docs.docker.com/get-docker/)
 
