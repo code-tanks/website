@@ -9,7 +9,7 @@ const config = {
   title: 'Code Tanks',
   tagline: 'Program your own tank in any language and compete for the best!',
   url: 'https://code-tanks.github.io',
-  baseUrl: '/',
+  baseUrl: '/home/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
