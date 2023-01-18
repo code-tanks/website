@@ -13,9 +13,17 @@ Navigate to the code-tanks template repo for the language of your choice and cli
 
 Clone the repository you have just made to your local machine.
 
-The recommended IDE for code-tanks is VSCode, which offers [development containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) allowing easy setup for different environments. If you prefer to install required libraries directly to your system, follow the installation steps provided in `/.devcontainer/Dockerfile` of any template repositories listed above.
+Run:
+```bash
+./get_scripts.sh
+```
 
-That's it! Head over to [Your First Tank](tutorial-basics/your-first-tank.md) to get started.
+
+That's it! Head over to [Your First Tank](tutorial-basics/your-first-tank.mdx) to get started.
+
+## (Optional) IDE
+
+The recommended IDE for code-tanks is VSCode, which offers [development containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) allowing easy setup for different environments. If you prefer to install required libraries directly to your system, follow the installation steps provided in `/.devcontainer/Dockerfile` of any template repositories listed above.
 
 ## (Optional) Desktop Requirements
 ```bash
