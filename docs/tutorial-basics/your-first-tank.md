@@ -45,7 +45,7 @@ def create_tank():
     return MyTank()
 ```
 
-This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Anatomy](anatomy.md), [Physics](physics.md), [Commands](commands.md) and [Events](events.md).
+This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Anatomy](anatomy.md), [Physics & World](physics-and-world.md), [Commands](commands.md), [Debugging](debugging.md), [Events](events.md), and [Game Engine Logic](game-engine-logic.md).
 
 # Building
 
