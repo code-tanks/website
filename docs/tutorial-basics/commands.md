@@ -7,9 +7,9 @@ sidebar_position: 4
 | Command | Value | Action | Limitations |
 | --- | --- |  --- | --- |
 | NONE | 0 | Nothing |
-| MOVE_FORWARD | 1 << 0 | Applies forward velocity |
+| MOVE_FORWARD | 1 << 0 | Applies forward velocity | 5 meters/ 3 ticks
 | MOVE_BACKWARD | 1 << 1 | Applies backward velocity |
-| ROTATE_TANK_CLOCKWISE | 1 << 2 | Applies clockwise angular velocity to the tank |
+| ROTATE_TANK_CLOCKWISE | 1 << 2 | Applies clockwise angular velocity to the tank | Rotates the tank at pi/200 ticks
 | ROTATE_TANK_COUNTER_CLOCKWISE | 1 << 3 | Applies counter-clockwise angular velocity to the tank |
 | FIRE | 1 << 4 | Fires the gun | Gun must cool down for 60 ticks before another FIRE command |
 | ROTATE_GUN_CLOCKWISE | 1 << 5 |  Applies clockwise angular velocity to the gun |
