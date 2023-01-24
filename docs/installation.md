@@ -4,10 +4,11 @@ sidebar_position: 2
 
 # Installation
 
-| Templates |
-| --- |
-| [Python](https://github.com/code-tanks/python-template) |
-| [Dart](https://github.com/code-tanks/dart-template) |
+|  |  |  |
+| --- | --- | --- |
+| Python | [API](https://github.com/code-tanks/python-api) | [Template](https://github.com/code-tanks/python-template) |
+| Rust |[API](https://github.com/code-tanks/code-tanks/tree/main/api) | [Template](https://github.com/code-tanks/rust-template) |
+| Dart |[API](https://github.com/code-tanks/dart-api) | [Template](https://github.com/code-tanks/dart-template) |
 
 Navigate to the code-tanks template repo for the language of your choice and click the green "*Use this template*" button.
 
