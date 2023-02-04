@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Running your own server
@@ -12,11 +12,11 @@ To add an insecure docker registry, add the file /etc/docker/daemon.json with th
 
 ```bash
 {
-  "insecure-registries" : ["localhost:5001"],
+  "insecure-registries" : ["registry:5001"],
 }
 ```
 
-and then restart docker.
+and then restart docker `sudo systemctl restart docker`.
 
 Now bring up all code-tank services.
 

@@ -5,19 +5,18 @@ sidebar_position: 1
 # Your First Tank
 
 # Basics
-For the purpose of simplicity we will use the [python](https://github.com/code-tanks/python-template) template of Code-Tanks. If you prefer any other language, please follow the README.md in it's template repository.
+Clone the template repository of your [preferred language](../installation.md).
 
-Clone the repository and open the folder in a [VSCode container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container).
+The file within `tanks/` is the file that you will be editing to create your tank. You may create as many tanks as you wish, however each tank's code must be in its own file and follow some basic requirements. These are usually the imports at the top of the file, the tank class, the run() and onEvent() tank methods, and the createTank() method that returns a instance of your tank.
 
-Open the file `tanks/my_tank.py`. This is the file that you will be editing to create your tank. You may create as many tank files as you wish, however your file must follow some basic requirements. These are usually the imports at the top of the file, the run() and onEvent() tank methods, and the createTank() method that returns a instance of your tank.
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Here is an example of a basic spinning tank in Python
+<Tabs groupId="code-tanks-language">
+<TabItem value="py" label="Python">
+
 ```py title="spin_bot.py"
-"""Python spinning tank
-"""
-
 from codetanks import BaseTank, commands
-
 
 class MyTank(BaseTank):
     """Simple Python spinning tank
@@ -45,7 +44,28 @@ def create_tank():
     return MyTank()
 ```
 
-This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Anatomy](anatomy.md), [Physics](physics.md), [Commands](commands.md) and [Events](events.md).
+</TabItem>
+<TabItem value="dart" label="Dart">
+
+```dart title="spin_bot.dart"
+class Tank {
+
+}
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust title="spin_bot.rs"
+fn main {
+
+}
+```
+
+</TabItem>
+</Tabs>
+
+This a basic tank that spins and fires. Upon any event, it will spin in the opposite direction. For more details, check out [Anatomy](anatomy.md), [Physics & World](physics-and-world.md), [Commands](commands.md), [Debugging](debugging.md), [Events](events.md), and [Game Engine Logic](game-engine-logic.md).
 
 # Building
 
