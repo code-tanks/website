@@ -16,12 +16,17 @@
   "dependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@docusaurus/core": "^2.3.1",
     "@docusaurus/preset-classic": "^2.3.1",
 =======
     "@docusaurus/core": "^2.3.0",
     "@docusaurus/preset-classic": "^2.3.0",
 >>>>>>> a3c5f96f6773920a90b324acc01c6eb80614d1d7
+=======
+    "@docusaurus/core": "2.1.0",
+    "@docusaurus/preset-classic": "2.1.0",
+>>>>>>> parent of a3c5f96... bump docusaurus
 =======
     "@docusaurus/core": "2.1.0",
     "@docusaurus/preset-classic": "2.1.0",
