@@ -102,7 +102,7 @@ const config = {
               // },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/code-tanks',
+                href: 'https://twitter.com/codetanks',
               },
             ],
           },
