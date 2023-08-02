@@ -5,9 +5,15 @@ sidebar_position: 1
 # Your First Tank
 
 # Basics
-Clone the template repository of your [preferred language](../installation.md).
+Clone the template repository of your preferred language.
 
-The file within `tanks/` is the file that you will be editing to create your tank. You may create as many tanks as you wish, however each tank's code must be in its own file and follow some basic requirements. These are usually the imports at the top of the file, the tank class, the run() and onEvent() tank methods, and the createTank() method that returns a instance of your tank.
+| Language |
+| --- |
+| [Python](https://github.com/code-tanks/python-template) |
+| [Rust](https://github.com/code-tanks/rust-template) |
+| [Dart](https://github.com/code-tanks/dart-template) |
+
+You will edit the file within `tanks/` to create your tank. You may create as many tanks as you wish, however each tank's code must be in its own file and follow some basic requirements. These are usually the imports at the top of the file, the tank class, the run() and onEvent() tank methods, and the createTank() method that returns a instance of your tank.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -69,25 +75,13 @@ This a basic tank that spins and fires. Upon any event, it will spin in the oppo
 
 # Building
 
-To upload your code
+To build your code
 ```bash
-./scripts/upload_tank.sh my_tank.py
+build_local.sh my_tank.py
 ```
-This will output the tank_id for your code. To check the build status of your tank, run
-```bash
-./scripts/get_build_log.sh YOUR_TANK_ID
-```
-This will output the build log for your code, otherwise it will return "building".
 
-# Running (Web)
+# Running
 ```bash
-./scripts/run_simulation.sh YOUR_TANK_ID ANOTHER_TANK_ID ETC_TANK_IDS
+ctdesktop TANK_HASH ANOTHER_TANK_HASH ETC_TANK_HASHES
 ```
-You may enter multiple tank ids as well as duplicate tank ids. To check the status of the simulation, simply run the same command.
-Then visit http://localhost:8088/YOUR_TANK_ID-ANOTHER_TANK_ID-ETC_TANK_IDS to view the simulation.
-
-# Running (Desktop)
-```bash
-cargo run --bin ctdesktop YOUR_TANK_ID ANOTHER_TANK_ID ETC_TANK_IDS
-```
-You may enter multiple tank ids as well as duplicate tank ids.
+You may enter multiple tank hashes as well as duplicate tank hashes.
