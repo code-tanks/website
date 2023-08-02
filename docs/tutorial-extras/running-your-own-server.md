@@ -3,8 +3,6 @@ sidebar_position: 1
 ---
 
 # Running your own server
-## Requirements
-- [Docker](https://docs.docker.com/get-docker/)
 
 ## Installation
 
@@ -12,7 +10,7 @@ To add an insecure docker registry, add the file /etc/docker/daemon.json with th
 
 ```bash
 {
-  "insecure-registries" : ["registry:5001"],
+  "insecure-registries" : ["localhost:5001"],
 }
 ```
 
@@ -30,10 +28,15 @@ There are helper scripts to build this code from source in the directory `code-t
 
 Example:
 ```bash
-./scripts/dev/build_all.sh
+./scripts/dev/server.sh
 ```
 
-Running a build script will restart that respective container in the docker compose stack
+The deploy the newly built container with:
+
+```bash
+docker compose up -d
+```
+
 
 For resetting the database:
 ```bash
