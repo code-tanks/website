@@ -28,7 +28,7 @@ There are helper scripts to build this code from source in the directory `code-t
 
 Example:
 ```bash
-./scripts/dev/server.sh
+./scripts/dev/build/server.sh
 ```
 
 The deploy the newly built container with:
