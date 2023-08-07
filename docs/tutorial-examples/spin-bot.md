@@ -43,17 +43,63 @@ def create_tank():
 <TabItem value="dart" label="Dart">
 
 ```dart title="spin_bot.dart"
-class Tank {
+import 'package:codetanks/codetanks.dart';
 
+class MyTank extends BaseTank {
+  int i = 0;
+
+  MyTank() {
+    print("Created my spin tank!");
+  }
+
+  @override
+  void run() {
+    if (i % 2 == 0) {
+      commands.add(Command.MOVE_FORWARD | Command.ROTATE_TANK_CLOCKWISE | Command.FIRE);
+    } else {
+      commands.add(Command.MOVE_BACKWARD | Command.ROTATE_TANK_COUNTER_CLOCKWISE | Command.FIRE);
+    }    
+    print(commands);
+  }
+  
+  @override
+  void onEvent(Map event) {
+    print(event);
+    i = i + 1;
+    print(i);
+  }
 }
+
+BaseTank createTank() => MyTank();
 ```
 
 </TabItem>
 <TabItem value="rust" label="Rust">
 
 ```rust title="spin_bot.rs"
-fn main {
+use ct_api::*;
+use serde_json::Value;
 
+pub struct MyTank {
+    i: u32
+}
+
+impl Tank for MyTank {
+    fn run(&mut self, commands: &mut Vec<Command>) {
+        if self.i % 2 == 0 {
+            commands.push(Commands::MOVE_FORWARD | Commands::ROTATE_TANK_CLOCKWISE | Commands::FIRE);
+        } else {
+            commands.push(Commands::MOVE_BACKWARD | Commands::ROTATE_TANK_COUNTER_CLOCKWISE | Commands::FIRE);
+        }
+    }
+
+    fn on_event(&mut self, commands: &mut Vec<Command>, event: &Value) {
+        self.i += 1;
+    }
+}
+
+pub fn create_tank() -> MyTank {
+    MyTank { i: 0 }
 }
 ```
 
