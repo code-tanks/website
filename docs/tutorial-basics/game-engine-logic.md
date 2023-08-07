@@ -17,7 +17,7 @@ for t in tanks:
 ```python
 # pseudocode for apply_commands()
 for t in tanks:
-    system.apply_command(t.pop())
+    system.apply_command(t.commands.pop())
 ```
 
 3. apply_physics()
