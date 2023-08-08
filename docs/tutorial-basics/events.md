@@ -14,19 +14,22 @@ sidebar_position: 5
 Here is the Event JSON specification
 ```json
 {
-    "collision_type": "string",
-    "entity": "string",
-    "transform": {
-        "x": "float",
-        "y": "float",
-        "rotation": "float"
-    },
-    "velocity": {
-        "linvel": {
+    "event_type": "string",
+    "info": {
+        "collision_type": "string",
+        "entity": "integer",
+        "transform": {
             "x": "float",
-            "y": "float"
+            "y": "float",
+            "rotation": "float"
         },
-        "angvel": "float"
+        "velocity": {
+            "linvel": {
+                "x": "float",
+                "y": "float"
+            },
+            "angvel": "float"
+        }
     }
 }
 ```
